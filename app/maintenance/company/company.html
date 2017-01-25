@@ -1,0 +1,222 @@
+<div class="container">
+    <div class="page-header">
+        <h3>Maintenance Company</h3>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form name="myForm" novalidate>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label> Name </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-sort-alpha-asc"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="company.Name" name="company.Name" title="Name" placeholder="Name" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <label> Type </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-keyboard-o"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="company.Type" title="Type" placeholder="Type" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <label> Website </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-globe"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="company.Website" title="Website" placeholder="Website" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label> AddrLine #1 </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-address-book-o"></span>
+                            </span>
+                            <input type="text" title="Address Line 1" [(ngModel)]="company.AddressLine1" placeholder="Address Line 1" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <label> AddrLine #2 </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-address-book-o"></span>
+                            </span>
+                            <input type="text" title="Address Line 2" placeholder="Address Line 2" [(ngModel)]="company.AddressLine2" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <label> Zipcode </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-list-ol"></span>
+                            </span>
+                            <input type="text" title="Zipcode" placeholder="Zipcode" [(ngModel)]="company.Zipcode" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-xs-3">
+                        <label> City </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-map-marker"></span>
+                            </span>
+                            <input type="text" title="City" [(ngModel)]="company.City" placeholder="City" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <label> State </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-location-arrow"></span>
+                            </span>
+                            <input type="text" title="State" [(ngModel)]="company.State" placeholder="State" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <label> Phone </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-phone"></span>
+                            </span>
+                            <input type="text" title="Phone" [(ngModel)]="company.Phone" placeholder="Phone" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <label> Fax </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-fax"></span>
+                            </span>
+                            <input type="text" title="Fax" [(ngModel)]="company.Fax" placeholder="Fax" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h4>Contacts</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label> Contact Name </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                            <span class="fa fa-sort-alpha-asc"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="company.Contact.Name" title="Contact Name" placeholder="Contact Name" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <label> Contact Title </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-address-book"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="company.Contact.Title" title="Contact Title" placeholder="Title" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <label> Contact Phone </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-mobile-phone"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="company.Contact.Phone" title="Contact Phone #" placeholder="Phone #" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-2 text-right">
+                        <label> </label>
+                        <br />
+                        <button type="button" (click)="AddContact(company.Contact)" class="form-control btn btn-primary btn-sm">
+                            <span class="badge"><span class="fa fa-plus-circle"></span></span>
+                            <span> Add</span>
+                        </button>
+                    </div>
+                </div>
+                <br/>
+                <div class="row" *ngIf="company.Contacts.length > 0">
+                    <div class="col-xs-12">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Title</th>
+                                    <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="#cont of company.Contacts">
+                                    <td>
+                                        <div class="input-group">
+                                            <span title="Remove Contact" (click)="RemoveContact(cont)" class="input-group-addon" id="basic-addon2">
+                                            <span class="fa fa-trash"></span>
+                                            </span>
+                                            <input type="text" [(ngModel)]="cont.Name" title="Contact Name" placeholder="Name" class="form-control app-textbox" maxlength="32"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" [(ngModel)]="cont.Title" title="Contact Title" placeholder="Title" class="form-control app-textbox" maxlength="32"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" [(ngModel)]="cont.Phone" title="Contact Phone #" placeholder="Phone #" class="form-control app-textbox" maxlength="32" />
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-right">
+                        <button (click)="BackToCompanies()" type="button" class="btn btn-info btn-lg">
+                            <span class="fa fa-arrow-left"></span>
+                            <span> Back</span>                        
+                        </button>
+                        <button type="submit" (click)="Save(company)" class="btn btn-success btn-lg">
+                            <span class="fa fa-check"></span>
+                            <span> Submit</span>                        
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-6">
+        </div>
+    </div>
+</div>

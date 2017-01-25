@@ -1,0 +1,208 @@
+<div class="container">
+    <div class="page-header">
+        <h3>Maintenance Contact</h3>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form name="myForm" novalidate>
+                <div class="row">
+                    <div class="col-xs-5">
+                        <label> Name </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-sort-alpha-asc"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="contact.Name" name="contact.Name" title="Name" placeholder="Name" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <label> Email </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-Envelope-o"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="contact.Email" title="Email" placeholder="Website" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <label> Gender </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-male"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="contact.Sex" title="Sex" placeholder="Sex" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-xs-5">
+                        <label> AddrLine #1 </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-address-book-o"></span>
+                            </span>
+                            <input type="text" title="Address Line 1" [(ngModel)]="contact.AddressLine1" placeholder="Address Line 1" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <label> AddrLine #2 </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-address-book-o"></span>
+                            </span>
+                            <input type="text" title="Address Line 2" placeholder="Address Line 2" [(ngModel)]="contact.AddressLine2" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <label> Zipcode </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-list-ol"></span>
+                            </span>
+                            <input type="text" title="Zipcode" placeholder="Zipcode" [(ngModel)]="contact.Zipcode" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label> City </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-map-marker"></span>
+                            </span>
+                            <input type="text" title="City" [(ngModel)]="contact.City" placeholder="City" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <label> State </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-location-arrow"></span>
+                            </span>
+                            <input type="text" title="State" [(ngModel)]="contact.State" placeholder="State" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <label> Phone </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-phone"></span>
+                            </span>
+                            <input type="text" title="Phone" [(ngModel)]="contact.Phone" placeholder="Phone" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <label> Fax </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-fax"></span>
+                            </span>
+                            <input type="text" title="Fax" [(ngModel)]="contact.Fax" placeholder="Fax" class="form-control app-textbox" maxlength="32"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h4>Companies</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5">
+                        <label> Company Name </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                            <span class="fa fa-sort-alpha-asc"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="contact.Company.Name" title="Company Name" placeholder="Company Name" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <label> Company Title </label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">
+                        <span class="fa fa-address-book"></span>
+                            </span>
+                            <input type="text" [(ngModel)]="contact.Company.Title" title="Company Title" placeholder="Title" class="form-control app-textbox"
+                                maxlength="32" />
+                        </div>
+                    </div>
+                    <div class="col-xs-2 text-right">
+                        <label> </label>
+                        <br />
+                        <button type="button" (click)="AddCompany(contact.Company)" class="form-control btn btn-primary btn-sm">
+                            <span class="badge"><span class="fa fa-plus-circle"></span></span>
+                            <span> Add</span>
+                        </button>
+                    </div>
+                </div>
+                <br/>
+                <div class="row" *ngIf="contact.Companies.length > 0">
+                    <div class="col-xs-12">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="#cont of contact.Companies">
+                                    <td>
+                                        <div class="input-group">
+                                            <span title="Remove Company" (click)="RemoveCompany(cont)" class="input-group-addon" id="basic-addon2">
+                                            <span class="fa fa-trash"></span>
+                                            </span>
+                                            <input type="text" [(ngModel)]="cont.Name" title="Company Name" placeholder="Name" class="form-control app-textbox" maxlength="32"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" [(ngModel)]="cont.Title" title="Company Title" placeholder="Title" class="form-control app-textbox" maxlength="32"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-right">
+                        <button (click)="BackToContacts()" type="button" class="btn btn-info btn-lg">
+                            <span class="fa fa-arrow-left"></span>
+                            <span> Back</span>                        
+                        </button>
+                        <button type="submit" (click)="Save(contact)" class="btn btn-success btn-lg">
+                            <span class="fa fa-check"></span>
+                            <span> Submit</span>                        
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-6">
+        </div>
+    </div>
+</div>

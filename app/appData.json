@@ -1,0 +1,95 @@
+{
+    "Companies": [
+        {
+            "Id": 1000,
+            "Name": "ABCD 1000",
+            "Address": "#3/4, XXXXX Street, IL",
+            "Phone": "12345678",
+            "Fax": "3444 44 444",
+            "Type": "Lender",
+            "Contacts": [
+                {
+                    "FirstName": "TSTFN101",
+                    "LastName": "TSTLN101",
+                    "Phone": "12123 2323 3123",
+                    "Name": "TSTUSER101",
+                    "Sex": "M"
+                },
+                {
+                    "FirstName": "TSTFN102",
+                    "LastName": "TSTLN102",
+                    "Phone": "12123 2323 3123",
+                    "Name": "TSTUSER102",                    
+                    "Sex": "M"
+                },
+                {
+                    "FirstName": "TSTFN103",
+                    "LastName": "TSTLN103",
+                    "Name": "TSTUSER103",
+                    "Phone": "12123 2323 3123",
+                    "Sex": "F"
+                }
+            ]
+        },
+        {
+            "Id": 1001,
+            "Name": "ABCD 1001",
+            "Address": "#5/41, XXXXX Street, IL",
+            "Phone": "12345678",
+            "Fax": "3444 44 444",
+            "Type": "Lender",
+            "Contacts": [
+                {
+                    "FirstName": "TSTFN101",
+                    "LastName": "TSTLN101",
+                    "Phone": "12123 2323 3123",
+                    "Sex": "M"
+                }
+            ]
+        },
+        {
+            "Id": 1002,
+            "Name": "ABCD 1002",
+            "Address": "#67/4, XXXXX Street, IL",
+            "Phone": "12345678",
+            "Fax": "3444 44 444",
+            "Type": "Lender",
+            "Contacts": [
+                {
+                    "FirstName": "TSTFN101",
+                    "LastName": "TSTLN101",
+                    "Phone": "12123 2323 3123",
+                    "Sex": "M"
+                },
+                {
+                    "FirstName": "TSTFN103",
+                    "LastName": "TSTLN103",
+                    "Phone": "12123 2323 3123",
+                    "Sex": "F"
+                }
+            ]
+        },
+        {
+            "Id": 1003,
+            "Name": "ABCD 1003",
+            "Address": "#3/4, XXXXX Street, IL",
+            "Phone": "12345678",
+            "Fax": "3444 44 444",
+            "Type": "Lender",
+            "Contacts": [
+                {
+                    "FirstName": "TSTFN102",
+                    "LastName": "TSTLN102",
+                    "Phone": "12123 2323 3123",
+                    "Sex": "M"
+                },
+                {
+                    "FirstName": "TSTFN103",
+                    "LastName": "TSTLN103",
+                    "Phone": "12123 2323 3123",
+                    "Sex": "F"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+<!--<nav class="navbar navbar-default navbar-static-top" role="navigation">
+
+    <div class="navbar-header">
+        <a [routerLink]="['/maintenance/companies']" (click)="setMenu('companies')" class="navbar-brand text-uppercase">Rapid v1.0</a>
+    </div>
+
+    <div>
+        <ul class="nav navbar-nav">
+            <li (click)="setMenu('companies')" [ngClass]="{active: menu === 'companies'}">
+                <a [routerLink]="['/companies']">Company</a></li>
+            <li (click)="setMenu('contacts')" [ngClass]="{active: menu === 'contacts'}">
+                <a [routerLink]="['/maintenance/contacts']">Contacts</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a><span class="fa fa-user"></span> 
+        <span>Kiju Victoria</span></a></li>
+        </ul>
+    </div>
+</nav>-->
+
+<!-- Begin page content -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<!-- ./Begin page content -->
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted"><span class="fa fa-copyright"></span> {{ currentYear }} Rapid</p>
+    </div>
+</footer>
